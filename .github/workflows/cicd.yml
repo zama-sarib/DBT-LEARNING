@@ -24,14 +24,13 @@ jobs:
         run: pip install -r requirements.txt 
 
       - name: Install dbt dependencies
-        run: dbt deps
+        run: cd dbt_snowflake_learning && dbt deps
 
       - name: Run lint check
-        run: sqlfluff lint models --dialect snowflake
+        run: cd dbt_snowflake_learning && sqlfluff lint models --dialect snowflake
 
       - name: Run dbt test
-        run: dbt test --profiles-dir ./
+        run: cd dbt_snowflake_learning && dbt test --profiles-dir ./
 
       - name: dbt run
-        run: dbt run --profiles-dir ./
-        
+        run: cd dbt_snowflake_learning && dbt run --profiles-dir ./
