@@ -36,5 +36,5 @@ jobs:
       - name: dbt run
         run: cd dbt_snowflake_learning && dbt run --profiles-dir ./
 
-      - name: dbt run
-            run: cd dbt_snowflake_learning && dbt build --profiles-dir ./ 
+      - name: dbt build
+        run: cd dbt_snowflake_learning && dbt build --profiles-dir ./ 
