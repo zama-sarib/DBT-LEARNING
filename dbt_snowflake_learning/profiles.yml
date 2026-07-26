@@ -1,0 +1,24 @@
+dbt_snowflake_learning:
+  outputs:
+    dev:
+      account: xi97551.ap-southeast-7.aws
+      database: DEV_DB
+      password: Rourkela@695312
+      role: ACCOUNTADMIN
+      schema: DEV_SCHEMA
+      threads: 1
+      type: snowflake
+      user: zamasa
+      warehouse: COMPUTE_WH
+
+    prod:
+      account: xi97551.ap-southeast-7.aws
+      database: PROD_DB
+      password: Rourkela@695312
+      role: ACCOUNTADMIN
+      schema: PROD_SCHEMA
+      threads: 1
+      type: snowflake
+      user: zamasa
+      warehouse: COMPUTE_WH
+  target: dev

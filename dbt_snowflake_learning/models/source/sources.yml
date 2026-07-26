@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: sources
+    database: LEARNING_DB
+    schema: LEARNING_SCHEMA
+    tables:
+      - name: employee
