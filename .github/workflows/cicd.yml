@@ -37,4 +37,4 @@ jobs:
         run: cd dbt_snowflake_learning && dbt run --profiles-dir ./
 
       - name: dbt build
-        run: cd dbt_snowflake_learning && dbt build --profiles-dir ./ 
+        run: cd dbt_snowflake_learning && dbt build --target prod
