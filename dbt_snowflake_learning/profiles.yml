@@ -13,7 +13,7 @@ dbt_snowflake_learning:
 
     prod:
       account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
-      database: DEV_DB
+      database: PROD_DB
       password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
       role: "{{ env_var('SNOWFLAKE_ROLE') }}"
       schema: "{{ env_var('SNOWFLAKE_SCHEMA_PROD') }}"
